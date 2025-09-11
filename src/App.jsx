@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Info from "./Components/Info";
-import Weather from "./Components/weather";
+import Weather from "./Components/Weather"
 // import background from"./assets/mainbg.jpg"
 
 export default function App() {
