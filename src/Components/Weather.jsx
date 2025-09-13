@@ -6,6 +6,9 @@ import cloud_icon from "../assets/cloud.png"
 import drizzle_icon from "../assets/drizzle.png"
 import rain_icon from "../assets/rain.png"
 import snow_icon from "../assets/snow.png"
+import clear_icon_night from"../assets/moon.svg"
+import cloud_night from "../assets/cloud_night.svg"
+import rain_night from"../assets/rain_night.svg"
 import {FaFacebook,FaInstagram,FaGithub,FaGlobe} from "react-icons/fa"
 
 
@@ -13,19 +16,21 @@ export default function Weather({setWeatherData,weatherData}) {
     const inputRef=useRef();
      const allIcons={
         "01d":clear_icon,
-        "01n":clear_icon,
+        "01n":clear_icon_night,
         "02d":cloud_icon,
-        "02n":cloud_icon,
+        "02n":cloud_night,
         "03d":cloud_icon,
-        "03n":cloud_icon,
+        "03n":cloud_night,
         "04d":drizzle_icon,
-        "04n":drizzle_icon,
+        "04n":rain_night,
         "09d":rain_icon,
-        "09n":rain_icon,
+        "09n":rain_night,
         "10d":rain_icon,
-        "10n":rain_icon,
+        "10n":rain_night,
         "13d":snow_icon,
         "13dn":snow_icon, 
+        "50d":clear_icon,
+        "50n":clear_icon_night
     }
     const search =async(city)=>{
         if(city === ""){
