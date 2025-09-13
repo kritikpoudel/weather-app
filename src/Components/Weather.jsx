@@ -6,7 +6,7 @@ import cloud_icon from "../assets/cloud.png"
 import drizzle_icon from "../assets/drizzle.png"
 import rain_icon from "../assets/rain.png"
 import snow_icon from "../assets/snow.png"
-import {FaFacebook,FaInstagram,FaGithub} from "react-icons/fa"
+import {FaFacebook,FaInstagram,FaGithub,FaGlobe} from "react-icons/fa"
 
 
 export default function Weather({setWeatherData,weatherData}) {
@@ -96,9 +96,10 @@ export default function Weather({setWeatherData,weatherData}) {
         <div className='absolute bottom-0 right-0 mr-4'>
             <h1 className='text-2xl font-extralight text-gray-300'>Kritik poudel</h1>
             <div className='flex gap-3 mb-3 float-right'>
-                <a href="https://www.facebook.com/kritikpoudel0"target="_blank" rel="noopener noreferrer"> <FaFacebook/></a>
-                <a href="https://www.instagram.com/kritikpoudel/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
                 <a href="https://github.com/kritikpoudel" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
+                <a href="https://kritikpoudel.com.np/"target="_blank" rel="noopener noreferrer"><FaGlobe/></a>
+                <a href="https://www.instagram.com/kritikpoudel/" target="_blank" rel="noopener noreferrer"><FaInstagram/></a>
+                <a href="https://www.facebook.com/kritikpoudel0"target="_blank" rel="noopener noreferrer"> <FaFacebook/></a>
             </div>
 
         </div>
