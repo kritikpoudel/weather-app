@@ -6,6 +6,7 @@ import cloud_icon from "../assets/cloud.png"
 import drizzle_icon from "../assets/drizzle.png"
 import rain_icon from "../assets/rain.png"
 import snow_icon from "../assets/snow.png"
+import {FaFacebook,FaInstagram,FaGithub} from "react-icons/fa"
 
 
 export default function Weather({setWeatherData,weatherData}) {
@@ -60,7 +61,7 @@ export default function Weather({setWeatherData,weatherData}) {
             search("Kathmandu");
         },[])
   return (
-    <div className='w-[40%] h-[100%] float-right text-white'>
+    <div className='w-[40%] h-[100%] float-right text-white relative'>
         <div className='flex justify-center '>
             <img className='size-25 mt-7' src={weatherData.icon} alt="" />
         </div>
@@ -91,6 +92,15 @@ export default function Weather({setWeatherData,weatherData}) {
                 <span>Wind Speed</span>
                 <span>{weatherData.whindSpeed} m/s</span>
             </div>
+        </div>
+        <div className='absolute bottom-0 right-0 mr-4'>
+            <h1 className='text-2xl font-extralight text-gray-300'>Kritik poudel</h1>
+            <div className='flex gap-3 mb-3 float-right'>
+                <a href="https://www.facebook.com/kritikpoudel0"> <FaFacebook/></a>
+                <a href="https://www.instagram.com/kritikpoudel/"><FaInstagram/></a>
+                <a href="https://github.com/kritikpoudel"><FaGithub/></a>
+            </div>
+
         </div>
 
     </div>
